@@ -6,7 +6,7 @@ description = "Global DNS propagation checker TUI — watch a DNS record propaga
 keywords = ["dns", "propagation", "tui", "terminal", "networking"]
 categories = ["command-line-utilities", "network-programming"]
 license = "MIT"
-repository = "https://github.com/fiveonefour/dnsglobe"
+repository = "https://github.com/514-labs/dnsglobe"
 readme = "README.md"
 
 [dependencies]
