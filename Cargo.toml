@@ -1,0 +1,22 @@
+[package]
+name = "dnsglobe"
+version = "0.1.0"
+edition = "2021"
+description = "Global DNS propagation checker TUI — watch a DNS record propagate across 34 public resolvers worldwide, on a world map in your terminal"
+keywords = ["dns", "propagation", "tui", "terminal", "networking"]
+categories = ["command-line-utilities", "network-programming"]
+license = "MIT"
+repository = "https://github.com/fiveonefour/dnsglobe"
+readme = "README.md"
+
+[dependencies]
+anyhow = "1.0"
+crossterm = { version = "0.28", features = ["event-stream"] }
+futures = "0.3"
+hickory-resolver = "0.24"
+ratatui = "0.29"
+tokio = { version = "1", features = ["full"] }
+
+[profile.release]
+lto = true
+strip = true
